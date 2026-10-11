@@ -5,56 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f5f9;
-      color: #222;
-      margin: 0;
-      line-height: 1.6;
-    }
 
-    header {
-      background: #252b48;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
 
-    nav {
-      padding: 15px;
-      text-align: center;
-      background: white;
-    }
+header {
+  background: #FAF9F6;
+  color: #292D2A;
+  padding: 60px 10%;
+  text-align: left;
+}
 
-    nav a {
-      color: #3949ab;
-      margin: 0 12px;
-      text-decoration: none;
-    }
+header h1 {
+  color: #344E41;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
 
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
+header p {
+  color: #626963;
+  line-height: 1.7;
+}
 
-    section {
-      background: white;
-      padding: 24px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-    }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 10%;
+}
 
-    h2 {
-      color: #3949ab;
-    }
+.hero-text {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .hero {
+    gap: 24px;
+    padding: 40px 6%;
+  }
+
+  .hero-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+nav {
+  background: #FAF9F6;
+  padding: 20px;
+}
+
+nav a {
+  color: #344E41;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+nav a:hover {
+  color: #879B82;
+} 
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to my Portfolio! </br> I'm Leslie Guzman!</h1>
+<header class="hero">
+  <div class="hero-text">
+    <h1>Welcome!</br> I'm Leslie Guzman.</h1>
     <p>Software Development | Data Analytics</p>
-  </header>
+  </div>
+
+  <div class="hero-image">
+    <img src="Default_selfie.jpg" alt="My profile photo">
+  </div>
+</header>
 
   <nav>
     <a href="#about">About</a>
