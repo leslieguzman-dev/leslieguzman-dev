@@ -75,6 +75,37 @@ nav a {
 nav a:hover {
   color: #879B82;
 } 
+
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: #879B82;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #344E41;
+  transform: translateY(-2px);
+}
+
+
+.profile-photo {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius:0%;
+  border: 4px solid #879B82;
+  display: block;
+}
+
   </style>
 </head>
 <body>
@@ -112,6 +143,19 @@ nav a:hover {
 
     <section id="projects">
       <h2>My Projects</h2>
+        
+
+    <img src="InsuranceFarmPhoto.jpg"
+        alt="My profile photo"
+     class="profile-photo">
+        <a href="https://leslieguzman-dev.github.io/InsuranceFarm/"
+          class="project-button"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Project
+          <span aria-hidden="true">↗</span>
+        </a>
+
       <p>I created an application for a small insurance company to use for managing customer service request, monitor performance and identify opportunities to improve it's processes.</p>
     </section>
 
